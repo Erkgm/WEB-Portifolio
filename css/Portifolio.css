@@ -116,6 +116,11 @@ nav ul li button:hover {
 .projeto a {
   text-decoration: none; /* Remove sublinhado */
   color: inherit; /* Mantém a cor do texto */
+  display: flex;
+  flex-direction: column; /* Organiza os elementos verticalmente */
+  align-items: center; /* Centraliza os elementos */
+  gap: 10px; /* Espaçamento entre o título e o texto */
+  width: 100%;
 }
 
 .projeto a:hover {
