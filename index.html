@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portifólio - Erick Maia</title>
+  <!-- Link para o arquivo CSS local -->
+  <link rel="stylesheet" href="css/Portifolio.css">
+  <!-- Link para a biblioteca de ícones Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<!-- Cabeçalho com título e navegação -->
+<header>
+  <h1>Meu Portifólio</h1>++
+  <nav>
+    <ul>
+      <!-- Botões de navegação para rolar até as seções -->
+      <li><button onclick="scrollToSection('sobre')">Sobre mim</button></li>
+      <li><button onclick="scrollToSection('projetos')">Projetos</button></li>
+      <li><button onclick="scrollToSection('contato')">Contatos</button></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Seção "Sobre Mim" -->
+<section id="sobre">
+  <h2>Sobre mim</h2>
+  <div class="sobre-container">
+    <!-- Foto pessoal -->
+    <img src="img/portifolio.jpg" alt="Erick Maia" class="minha-foto">
+    <p>
+      Sou estudante de Sistemas de Informação, com uma paixão por tecnologia e inovação. Tenho experiência em
+      programação com Java e familiaridade em Python e C++, e habilidades práticas em projetos utilizando Arduino
+      e Raspberry Pi.
+    </p>
+    <p>
+      Gosto de trabalhar em equipe e acredito que a colaboração é fundamental para alcançar grandes resultados.
+      Estou sempre em busca de novas oportunidades e desafios que me permitam crescer profissionalmente e aplicar
+      meus conhecimentos em soluções criativas e eficazes.
+    </p>
+    <p>
+      Estou fazendo esse site como uma próxima etapa para meus estudos em WEB.
+    </p>
+  </div>
+</section>
+
+<!-- Seção "Projetos" -->
+<section id="projetos">
+  <h2>Projetos</h2>
+  <!-- Cada projeto possui um link e uma descrição -->
+  <div class="projeto">
+    <a href="Pessoal.html" target="_blank" class="projeto">
+      <h3>Página Pessoal</h3>
+      <p>
+        Uma página pessoal onde explico melhor minha trajetória, certificados e mais sobre a minha pessoa.
+      </p>
+    </a>
+  </div>
+
+  <div class="projeto">
+    <a href="Seminfo.html" target="_blank" class="projeto">
+      <h3>SEMINFO-2024</h3>
+      <p>
+        Uma página de eventos criada com base na SEMINFO 2024 do Campus Urutaí, especialmente para a organização
+        principal dos jogos.
+      </p>
+    </a>
+  </div>
+
+  <div class="projeto">
+    <a href="JogoTermo.html" target="_blank" class="projeto">
+      <h3>Termologia</h3>
+      <p>
+        Um jogo inspirado no famoso Termo, voltado para a área da programação. Ideal para iniciantes nessa área.
+      </p>
+    </a>
+  </div>
+
+  <div class="projeto">
+    <a href="Calculadora.html" target="_blank" class="projeto">
+      <h3>Calculadora</h3>
+      <p>
+        Um projeto de calculadora simples e funcional que realiza operações básicas, desenvolvido com HTML, CSS e JavaScript.
+      </p>
+    </a>
+  </div>
+
+  <div class="projeto">
+    <a href="LojaVirtual.html" target="_blank" class="projeto">
+      <h3>BarBaridade</h3>
+      <p>
+        Uma página inspirada no iFood, desenvolvida como cardápio virtual para um bar local. Planejamento para incluir
+        função de delivery futuramente.
+      </p>
+    </a>
+  </div>
+
+  <div class="projeto" onclick="mostrarPopup()">
+    <h3>Outros Projetos</h3>
+    <p>
+      Uma variedade de projetos, pessoais ou realizados pelo Campus, disponíveis em breve.
+    </p>
+  </div>
+
+  <!-- Popup informativo -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="fechar" onclick="fecharPopup()">&times;</span>
+      <p>Estamos criando uma página melhor para mostrar esses projetos com mais detalhes. Em breve estará disponível!</p>
+    </div>
+  </div>
+</section>
+
+<!-- Seção "Contatos" -->
+<section id="contato">
+  <h2>Contatos</h2>
+  <div class="social-icons">
+    <!-- Ícones de redes sociais -->
+    <a href="https://github.com/Erkgm/" target="_blank"><i class="fab fa-github"></i></a>
+    <a href="https://www.instagram.com/ericckgm/" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.facebook.com/Erick Maia/" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://www.linkedin.com/in/Erick Maia/" target="_blank"><i class="fab fa-linkedin"></i></a>
+  </div>
+</section>
+
+<!-- Rodapé -->
+<footer>
+  <p>&copy; 2024 MAIA, Erick. Todos os direitos reservados.</p>
+</footer>
+
+<!-- Link para o arquivo JavaScript -->
+<script src="js/Portifolio.js"></script>
+</body>
+</html>
